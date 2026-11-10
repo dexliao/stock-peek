@@ -23,6 +23,8 @@ tauri = { version = "2", features = ["tray-icon"] }
 tauri-plugin-global-shortcut = "2"
 akshare = { version = "=0.1.14", default-features = false, features = ["equity"] }
 futures = "0.3"
+# calamine 0.26 与 zip 2.6 的 ZipFile 泛型不兼容
+zip = { version = "=2.5.0", default-features = false }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
